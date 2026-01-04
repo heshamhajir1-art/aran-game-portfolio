@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+<!-- الشريط العلوي / Navigation -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- الهيدر / Header -->
+<header>
+    <h1>Aran Dezayi</h1>
+    <p>Kurdish-Iraqi University Student & Game Developer</p>
+</header>
+
+<!-- قسم عني / About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p id="aboutText">
+        Hi! I'm Aran Dezayi, a passionate Kurdish-Iraqi university student specialized in game development.
+        I enjoy creating interactive worlds and bringing ideas to life using Unity and Unreal Engine.
+        My goal is to build games that entertain, challenge, and inspire players around the world.
+    </p>
+</section>
+
+<!-- قسم المشاريع / Projects -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Space Adventure</h3>
+            <p>2D Unity game exploring outer space and defeating alien enemies.</p>
+        </div>
+        <div class="project-card">
+            <h3>Racing Mania</h3>
+            <p>3D racing game with realistic physics and challenging tracks.</p>
+        </div>
+        <div class="project-card">
+            <h3>Puzzle Master</h3>
+            <p>Logic puzzle game to challenge players’ problem-solving skills.</p>
+        </div>
+    </div>
+</section>
+
+<!-- قسم المهارات / Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">C# Programming</div>
+        <div class="skill">Unity Engine</div>
+        <div class="skill">Unreal Engine</div>
+        <div class="skill">Blender 3D</div>
+        <div class="skill">Game Design</div>
+    </div>
+</section>
+
+<!-- قسم التواصل / Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- الفوتر / Footer -->
+<footer>
+    &copy; 2026 Aran Dezayi | Kurdish-Iraqi Game Developer
+</footer>
+
+<!-- سكربت حركة النص عند التمرير -->
+<script>
+    const aboutText = document.getElementById('aboutText');
+    window.addEventListener('scroll', () => {
+        const rect = aboutText.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100) {
+            aboutText.classList.add('visible');
+        }
+    });
+</script>
+
+</body>
+</html>
